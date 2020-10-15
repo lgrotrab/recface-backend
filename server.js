@@ -21,11 +21,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  db.select("*")
-    .from("users")
-    .then((data) => {
-      res.json(data);
-    });
+  console.log("hello, i'm working");
 });
 
 app.get("/profile/:id", (req, res) => {
